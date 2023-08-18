@@ -126,6 +126,7 @@ const RadarEntry = (props: Props): JSX.Element => {
           href="#"
           tabIndex={0}
           onKeyPress={toggle}
+          aria-label={title}
         >
           {blip}
         </a>
