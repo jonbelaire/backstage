@@ -2,4 +2,4 @@
 '@backstage/plugin-tech-radar': patch
 ---
 
-Screen reader users will be able to navigate the Radar component now that links have a discernable name.
+Screen reader users will be able to navigate the RadarEntry component now that links have a discernible name.
