@@ -131,7 +131,7 @@ const RadarEntry = (props: Props): JSX.Element => {
           {blip}
         </a>
       ) : (
-        <WithLink url={url} className={classes.link}>
+        <WithLink url={url} className={classes.link} ariaLabel={title}>
           {blip}
         </WithLink>
       )}
