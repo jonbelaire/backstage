@@ -21,6 +21,7 @@ type WithLinkProps = {
   url?: string;
   className: string;
   children: React.ReactNode;
+  ariaLabel?: string;
 };
 
 export function isValidUrl(url: string | undefined): url is string {
@@ -31,9 +32,10 @@ export const WithLink = ({
   url,
   className,
   children,
+  ariaLabel,
 }: WithLinkProps): JSX.Element =>
   isValidUrl(url) ? (
-    <Link className={className} to={url}>
+    <Link className={className} to={url} aria-label={ariaLabel}>
       {children}
     </Link>
   ) : (
